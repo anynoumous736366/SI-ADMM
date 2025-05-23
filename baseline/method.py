@@ -9,11 +9,6 @@ class Model(object):
 
     def CTF(self, X, S1, S2, r=4, mu=0.125, eta=0.25, alpha=0.1, beta=0.1, lam=0.001, xita=1, tol=1e-6, max_iter=500):
         def CG(X_initial, A, B, D, mu, tol, max_iter):
-            '''
-            A: v U.T U
-            B: V.T V
-            D: v U.T O V
-            '''
             X = X_initial
             R = D - A * X * B - mu * X
             P = np.array(R, copy=True)

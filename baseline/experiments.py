@@ -136,10 +136,6 @@ def save_results_2_txt(model_name, results_text, data_source, rank, output_dir):
 
 
 def average_curves_with_std(curves):
-    """
-    Averages multiple (x, y) curves by interpolating onto a common x-axis,
-    and computes standard deviation across the y-values.
-    """
     x_common = np.linspace(0, 1, 100)
     y_all = []
 
