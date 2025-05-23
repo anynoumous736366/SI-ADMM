@@ -1,0 +1,8 @@
+
+/.idea
+data/cdcdb_tdc_x.pickle
+data/cdcdb_tdc_y.pickle
+baseline/CTF_DDI-master/ADMM/cdcdb_tdc_x.pickle
+baseline/CTF_DDI-master/ADMM/cdcdb_tdc_y.pickle
+baseline/ADMM/cdcdb_tdc_x.pickle
+baseline/ADMM/cdcdb_tdc_y.pickle
