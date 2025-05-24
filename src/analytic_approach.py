@@ -335,7 +335,7 @@ def update_Ci(U_i, Sa_i, Y_i, SI_penalty, alpha_i):
 
 if __name__ == '__main__':
     args = parse_arguments()
-
+    tol = 0.0000000001
     # basic parameter of input data
     non_binary = args.nb
     x_name = args.x_data
@@ -552,7 +552,7 @@ if __name__ == '__main__':
 
             last_value = current_value
 
-            if no_improve_counter >= patience:
+            if no_improve_counter >= patience or (x_stopping_val + y_stopping_val) < tol:
                 print(f"early stopping triggered at iteration {iter} due to no improvement on losses")
                 break
 
