@@ -191,6 +191,7 @@ def parse_arguments():
     parser.add_argument("--save_dir", type=str, default="../output/", help='directory for saving results')
 
     parser.add_argument("--train_iter", type=int, default=1000, help="how many training iteration")
+    parser.add_argument("--tol", type=int, default=0.00000001, help="tolerance for ealry stopping")
     parser.add_argument("--tolerance", type=int, default=10, help="tolerance for ealry stopping")
     parser.add_argument("--drug_dir", type=str, default="../data/{}_{}_all_drugs.npy",
                         help='A frame string with {} placeholders for directory')
@@ -335,7 +336,7 @@ def update_Ci(U_i, Sa_i, Y_i, SI_penalty, alpha_i):
 
 if __name__ == '__main__':
     args = parse_arguments()
-    tol = 0.0000000001
+    tol = args.tol
     # basic parameter of input data
     non_binary = args.nb
     x_name = args.x_data
