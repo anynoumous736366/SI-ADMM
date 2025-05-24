@@ -1,5 +1,7 @@
 # Project Setup Instructions
 
+This readme is for CIKM submission: Joint Learning of Drug-Drug Combination and Drug-Drug Interaction via Coupled Tensor-Tensor Factorization with Side
+
 This guide explains how to set up the Python environment required to run the project, and how to execute the SI-ADMM algorithm along with the baseline models.
 
 ## Requirements
